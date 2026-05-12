@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEB DESIGNING COMPILATION</title>
+
+<link rel="icon" type="image/png" href="FAV.png">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  overflow:hidden;
+}
+
+
+.container{
+  display:flex;
+  width:100vw;
+  height:100vh;
+  transition:transform 0.8s ease-in-out;
+}
+
+.page{
+  width:100vw;
+  height:100vh;
+  flex-shrink:0;
+}
+
+
+
+#login{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(255, 252, 59), rgb(30, 0, 74));
+}
+
+.login-container {
+  background: white;
+  padding: 40px;
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: rgb(123, 25, 142);
+}
+
+.input-box {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: rgb(123, 25, 142);
+  box-shadow: 0 0 8px rgb(30, 0, 74);
+}
+
+.log-in-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(123, 25, 142);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.log-in-button:hover {
+  background: rgb(123, 25, 142);
+  box-shadow: 0 0 15px rgb(30, 0, 74);
+}
+
+.extra {
+  margin-top: 15px;
+  font-size: 12px;
+  color: rgb(30, 0, 74);
+}
+
+
+
+#hero{
+  height:100vh;
+  background:url("ME.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:3rem;
+  margin-bottom:15px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.hero-content p{
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.hero-button{
+  display: inline-block;
+  padding: 12px 25px;
+  background: rgb(123, 25, 142);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgb(123, 25, 142);
+}
+
+.hero-button:hover{
+  background: rgb(30, 0, 74);
+  box-shadow: 0 0 25px rgb(30, 0, 74);
+  transform: scale(1.05);
+}
+
+
+
+
+#bts{
+  background-image: url("BTS.jpg");
+  background-size: cover;
+  text-align: center;
+  font-family: Arial;
+}
+
+.moving-title{
+  color: red;
+  font-size: 60px;
+  position: relative;
+  animation: moveText 5s infinite alternate;
+  text-shadow: 0px 0px 50px rgb(123, 25, 142);
+}
+
+@keyframes moveText{
+  from{
+    left: 0px;
+  }
+
+  to{
+    left: 50px;
+  }
+}
+
+.song-title{
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+}
+
+.song-title:hover{
+  color: rgb(123, 25, 142);
+}
+
+.gif-image{
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.youtube-link{
+  color: rgb(123, 25, 142);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.youtube-link:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+#buttons{
+  font-family:Arial;
+  padding:30px;
+}
+
+.uber-button{
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+}
+
+.amazon-button{
+  background-color: rgb(255, 216, 20);
+  border: none;
+  height: 36px;
+  width: 200px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.github-button{
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.bootstrap-button{
+  background-color: rgb(121, 82, 179);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 110px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.download-button{
+  background-color: white;
+  color: rgb(108, 117, 125);
+  border: 1px solid rgb(108, 117, 125);
+  height: 40px;
+  width: 110px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.linkedin-button{
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 240px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.save-button{
+  background-color: white;
+  color: rgb(10, 102, 194);
+  border: 1px solid rgb(10, 102, 194);
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+
+#hover{
+  font-family:Arial;
+  padding:30px;
+}
+
+.uber-button-hover{
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.uber-button-hover:hover{
+  opacity: 0.8;
+}
+
+.amazon-button-hover{
+  background-color: rgb(255, 216, 20);
+  border: none;
+  height: 36px;
+  width: 200px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.15s;
+}
+
+.amazon-button-hover:hover{
+  background-color: rgb(245, 205, 3);
+}
+
+.github-button-hover{
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.github-button-hover:hover{
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+.bootstrap-button-hover{
+  background-color: rgb(121, 82, 179);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 110px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: all 0.15s;
+}
+
+.bootstrap-button-hover:hover{
+  background-color: rgb(99, 60, 156);
+}
+
+.download-button-hover{
+  background-color: white;
+  color: rgb(108, 117, 125);
+  border: 1px solid rgb(108, 117, 125);
+  height: 40px;
+  width: 110px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.download-button-hover:hover{
+  background-color: rgb(108, 117, 125);
+  color: white;
+}
+
+.linkedin-button-hover{
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 240px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: all 0.15s;
+}
+
+.linkedin-button-hover:hover{
+  background-color: rgb(0, 85, 170);
+}
+
+.save-button-hover{
+  background-color: white;
+  color: rgb(10, 102, 194);
+  border: 1px solid rgb(10, 102, 194);
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.save-button-hover:hover{
+  background-color: rgb(226, 240, 254);
+  border-width: 2px;
+}
+
+
+
+.nav{
+  position:fixed;
+  bottom:20px;
+  width:100%;
+  text-align:center;
+}
+
+.nav button{
+  padding:8px 14px;
+  margin:5px;
+  border:none;
+  background:black;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.nav button:hover{
+  transform:scale(1.2);
+  background:purple;
+}
+</style>
+</head>
+
+
+
+<body>
+
+
+<section id="login">
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <form>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+      </div>
+
+      <button class="log-in-button" type="submit" onclick="login(event)">
+        Sign In
+      </button>
+
+    </form>
+
+    <div class="extra">
+      Forgot password? | Create account
+    </div>
+
+  </div>
+</section>
+
+<div class="container" id="slider">
+
+  
+<section class="page" id="hero">
+  <div class="hero-content">
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h1>Hi! I'm Angel😇</h1>
+
+  <p>I'm a Graphic Designer</p>
+  <p>Want to see my work? View my Portfolio.</p>
+
+  <a href="PORTFOLIO.pdf" class="hero-button">PORTFOLIO</a>
+
+  </div>
+</section>
+
+
+<section class="page" id="bts">
+  <h1 class="moving-title">
+    BANGTAN SONYEONDAN COMEBACK 2026
+  </h1>
+
+<br><br><br><br><br>
+
+  <h2 class="song-title">
+    BTS - Body To Body
+  </h2>
+
+  <audio controls>
+  <source src="Body to Body.mp3" type="audio/mpeg">
+  </audio>
+
+  <br><br>
+
+  <img class="gif-image" src="GOGO.gif">
+
+  <br><br>
+
+  <a class="youtube-link"
+  href="https://youtube.com/playlist?list=OLAK5uy_lkejA6kcdE00kf8UisGo0xqiSWHhy9r8s&si=3Np2beYwNA-gQspU"
+  target="_blank">
+    BTS ARIRANG ALBUM
+  </a>
+
+</section>
+
+
+<section class="page" id="buttons">
+
+  <button class="uber-button">
+    Request now
+  </button>
+
+  <br><br>
+
+  <button class="amazon-button">
+    Add to Cart
+  </button>
+
+  <br><br>
+
+  <button class="github-button">
+    Sign up
+  </button>
+
+  <br><br>
+
+  <button class="bootstrap-button">
+    Get started
+  </button>
+
+  <button class="download-button">
+    Download
+  </button>
+
+  <br><br>
+
+  <button class="linkedin-button">
+    Apply on company website
+  </button>
+
+  <button class="save-button">
+    Save
+  </button>
+
+</section>
+
+ 
+<section class="page" id="hover">
+
+  <button class="uber-button-hover">
+    Request now
+  </button>
+
+  <br><br>
+
+  <button class="amazon-button-hover">
+    Add to Cart
+  </button>
+
+  <br><br>
+
+  <button class="github-button-hover">
+    Sign up
+  </button>
+
+  <br><br>
+
+  <button class="bootstrap-button-hover">
+    Get started
+  </button>
+
+  <button class="download-button-hover">
+    Download
+  </button>
+
+  <br><br>
+
+  <button class="linkedin-button-hover">
+    Apply on company website
+  </button>
+
+  <button class="save-button-hover">
+    Save
+  </button>
+
+</section>
+</div>
+
+
+<div class="nav" id="nav" style="display:none;">
+  <button onclick="go(0)">1</button>
+  <button onclick="go(1)">2</button>
+  <button onclick="go(2)">3</button>
+  <button onclick="go(3)">4</button>
+</div>
+
+<script>
+
+function login(event){
+  event.preventDefault();
+
+  document.getElementById("login").style.display = "none";
+
+  document.getElementById("slider").style.transform =
+    "translateX(0vw)";
+
+  document.getElementById("nav").style.display = "block";
+}
+
+function go(page){
+  document.getElementById("slider").style.transform =
+    `translateX(-${page * 100}vw)`;
+}
+
+</script>
+
+</body>
+</html>
